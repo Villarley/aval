@@ -1,0 +1,18 @@
+.badge {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.cavos {
+  color: var(--color-cavos);
+  background: var(--color-cavos-bg);
+}
+
+.acta {
+  color: var(--color-acta);
+  background: var(--color-acta-bg);
+}

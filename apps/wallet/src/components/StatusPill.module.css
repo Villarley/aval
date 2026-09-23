@@ -1,0 +1,22 @@
+.pill {
+  display: inline-block;
+  padding: 0.125rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.valid {
+  color: var(--color-success);
+  background: var(--color-success-bg);
+}
+
+.revoked {
+  color: var(--color-danger);
+  background: var(--color-danger-bg);
+}
+
+.unknown {
+  color: var(--color-warning);
+  background: var(--color-warning-bg);
+}

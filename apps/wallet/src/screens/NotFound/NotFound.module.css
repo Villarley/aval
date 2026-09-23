@@ -1,0 +1,23 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: var(--space-xl);
+  text-align: center;
+}
+
+.title {
+  margin: 0 0 var(--space-sm);
+  font-size: 1.5rem;
+}
+
+.lead {
+  margin: 0 0 var(--space-lg);
+  color: var(--color-text-muted);
+}
+
+.link {
+  font-weight: 600;
+}
