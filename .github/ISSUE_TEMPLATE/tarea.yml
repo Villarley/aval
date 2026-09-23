@@ -1,0 +1,38 @@
+name: Tarea
+description: Tarea del Entregable 3 con codigo EDT y criterios de aceptacion
+title: "[3.x] "
+labels: []
+body:
+  - type: dropdown
+    id: edt
+    attributes:
+      label: Codigo EDT
+      options:
+        - "3.1 Requerimientos"
+        - "3.2 Prototipo interactivo"
+        - "3.3 Prueba de concepto tecnica"
+        - "3.4 Validacion y demo"
+    validations:
+      required: true
+
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Descripcion
+      description: Que hay que hacer y por que
+    validations:
+      required: true
+
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Criterios de aceptacion
+      description: Lista verificable de condiciones para dar la tarea por terminada
+    validations:
+      required: true
+
+  - type: input
+    id: responsable
+    attributes:
+      label: Responsable
+      description: Nombre del integrante asignado (opcional al crear)
