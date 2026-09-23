@@ -1,0 +1,23 @@
+{
+  "name": "mi-billetera",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Mi Billetera: digital wallet for W3C Verifiable Credentials on Stellar testnet",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build:shared": "npm run build -w @mi-billetera/shared",
+    "build": "npm run build:shared && npm run build -w @mi-billetera/api -w @mi-billetera/wallet",
+    "lint": "npm run build:shared && npm run lint -w @mi-billetera/api -w @mi-billetera/wallet",
+    "test": "npm run build:shared && npm run test -w @mi-billetera/api -w @mi-billetera/wallet",
+    "ci": "npm run lint && npm run test && npm run build",
+    "dev:api": "npm run dev -w @mi-billetera/api",
+    "dev:wallet": "npm run dev -w @mi-billetera/wallet --if-present"
+  },
+  "license": "MIT"
+}
